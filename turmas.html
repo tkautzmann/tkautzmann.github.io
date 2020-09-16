@@ -14,7 +14,6 @@
         <link rel="stylesheet" type="text/css" href="assets/csslib/icomoon.css">
         <link rel="stylesheet" type="text/css" href="assets/csslib/jquery.mCustomScrollbar.css">
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-custom.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/estilos.css">
         <link rel="stylesheet" type="text/css" id="savvyStyle" href="assets/css/main-skin-style6.css">
         <!-- end stylesheets -->
     </head>
@@ -27,7 +26,7 @@
                 <header>
                     <div id="headerMenuSlidingElement" class="main-nav__sliding-element"></div>
                     <ul class="main-nav">
-                        <li class="main-nav__item main-nav__item--active">
+                        <li class="main-nav__item">
                             <a class="main-nav__item-link" href="index.html">
                                 <span class="main-nav__item-icon-wrapper">
                                     <i class="main-nav__item-icon icon-home"></i>
@@ -36,11 +35,11 @@
                             </a>
                         </li>
                         <li class="main-nav__item">
-                            <a class="main-nav__item-link" href="curriculo.html">
+                            <a class="main-nav__item-link" href="resumo.html">
                                 <span class="main-nav__item-icon-wrapper">
                                     <i class="main-nav__item-icon icon-profile"></i>
                                 </span>
-                                <span class="main-nav__item-content">Currículo</span>
+                                <span class="main-nav__item-content">Resumo</span>
                             </a>
                         </li>
                         <!-- 
@@ -52,6 +51,7 @@
                                 <span class="main-nav__item-content">Services</span>
                             </a>
                         </li>
+                         
                         <li class="main-nav__item">
                             <a class="main-nav__item-link" href="publicacoes.html">
                                 <span class="main-nav__item-icon-wrapper">
@@ -60,7 +60,8 @@
                                 <span class="main-nav__item-content">Publicações</span>
                             </a>
                         </li>
-                        <li class="main-nav__item">
+                        --> 
+                        <li class="main-nav__item main-nav__item--active">
                             <a class="main-nav__item-link" href="turmas.html">
                                 <span class="main-nav__item-icon-wrapper">
                                     <i class="main-nav__item-icon icon-users"></i>
@@ -68,7 +69,6 @@
                                 <span class="main-nav__item-content">Turmas</span>
                             </a>
                         </li>
-						--> 
                         <li class="main-nav__item">
                             <a class="main-nav__item-link" href="contatos.html">
                                 <span class="main-nav__item-icon-wrapper">
@@ -113,13 +113,12 @@
                                 <i class="fa fa-facebook"></i>
                             </a>
                         </li>
-                        <!--
                         <li>
                             <a href="https://twitter.com/tiagokautzmann" target="_blank" class="social-icon--twitter">
                                 <i class="fa fa-twitter"></i>
                             </a>
                         </li>
-                         
+                        <!-- 
                         <li>
                             <a href="https://plus.google.com/" target="_blank" class="social-icon--google-plus">
                                 <i class="fa fa-google-plus"></i>
@@ -135,7 +134,7 @@
                     </ul>
                     <!-- end .social-icons -->
                     <footer class="footer">
-                        <p class="footer__copyright">Tiago Kautzmann, 2019</p>
+                        <p class="footer__copyright">Tiago Kautzmann, 2017</p>
                     </footer>
                 </div>
                 <!-- end .sidebar -->
@@ -144,35 +143,124 @@
             <div class="layout-container-main layout-container-width">
                 <!-- .layout-content -->
                 <div class="layout-content">
-                    <section class="page-home layout-row">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h1 class="page-home__page-title">Docência. Pesquisa. Computação.</h1>
-								<div class="page-home__text">
-                                    <p>Professor na área de Ciência da Computação, pesquisador em Inteligência Artificial (IA) aplicada à Educação e desenvolvedor de software.</p>
-                                    <p>Doutorando e Mestre em Computação Aplicada pela UNISINOS, Pós-Graduado em Formação Pedagógica pela Universidade FEEVALE, Tecnólogo em Sistemas para Internet pela Universidade FEEVALE e Certificado Oracle Certified Associate Java SE 8 Programmer.</p>
-									<p><img src="uploads/resume/O_Java-SE-8-OCA-clr.png" /></p>
+                    <section class="page-resume">
+                        <div class="layout-title-wrapper layout-row">
+                            <h1 class="layout-title layout-container-width layout-container">Turmas
+                               <!--  <span class="layout-title__subtitle">Up-to-date</span> -->
+                            </h1>
+                        </div>
+                        <div class="layout-row">
+                            <!-- .accordion-group -->
+                            <div class="accordion-group" role="tablist" aria-multiselectable="true">
+                                <div class="accordion-item accordion-item--layout">
+                                    <h2 data-toggle="collapse" data-target="#collapse0" class="accordion-title layout-container">
+                                        <i class="accordion-title__icon fa fa-graduation-cap"></i>Turmas em 2017/1
+                                        <i class="accordion-title__state-icon fa "></i>
+                                    </h2>
+                                    <div id="collapse0" class="accordion-item__panel collapse in">
+                                        <!-- .timeline -->
+                                        <div class="timeline timeline--layout layout-container">
+                                            <div class="timeline-item">
+                                                <div class="timeline-item__col timeline-item__col--info">
+                                                    <div class="timeline-item__place">IENH - Fundação Evangélica</div>
+                                                    <!-- <div class="timeline-item__location">Santa Monica, USA</div> -->
+                                                    <img src="uploads/resume/logo-ienh.jpg" alt="">
+                                                </div>
+                                                <div class="timeline-item__col timeline-item__col--description">
+                                                    <div class="timeline-item__period curso_turmas">Curso Superior Tecnológico em Análise e Desenvolvimento de Sistemas</div>
+                                                    <div class="timeline-item__title">Banco de Dados</div>
+                                                    <div class="timeline-item__description">
+	                                                    <p>
+		                                    				Acesso ao conteúdo no Sistema Moodle: <br>
+		                                    				<span><a target="_blank" href="http://ead.ienh.com.br/course/view.php?id=388">http://ead.ienh.com.br/course/view.php?id=388</a></span>
+	                                    				</p>
+                                                    </div>
+                                                </div>
+											</div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-item__col timeline-item__col--info">
+                                                    <div class="timeline-item__place">IENH - Fundação Evangélica</div>
+                                                    <!-- <div class="timeline-item__location">Santa Monica, USA</div> -->
+                                                    <img src="uploads/resume/logo-ienh.jpg" alt="">
+                                                </div>
+                                                <div class="timeline-item__col timeline-item__col--description">
+                                                    <div class="timeline-item__period curso_turmas">Curso Superior Tecnológico em Análise e Desenvolvimento de Sistemas</div>
+                                                    <div class="timeline-item__title">Programação</div>
+                                                    <div class="timeline-item__description">
+	                                                    <p>
+		                                    				Acesso ao conteúdo no Sistema Moodle: <br>
+		                                    				<span><a target="_blank" href="http://ead.ienh.com.br/course/view.php?id=405">http://ead.ienh.com.br/course/view.php?id=405</a></span>
+	                                    				</p>
+                                                    </div>
+                                                </div>
+											</div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-item__col timeline-item__col--info">
+                                                    <div class="timeline-item__place">IENH - Fundação Evangélica</div>
+                                                    <!-- <div class="timeline-item__location">Santa Monica, USA</div> -->
+                                                    <img src="uploads/resume/logo-ienh.jpg" alt="">
+                                                </div>
+                                                <div class="timeline-item__col timeline-item__col--description">
+                                                    <div class="timeline-item__period curso_turmas">Curso Superior Tecnológico em Redes de Computadores</div>
+                                                    <div class="timeline-item__title">Algoritmos</div>
+                                                    <div class="timeline-item__description">
+	                                                    <p>
+		                                    				Acesso ao conteúdo no Sistema Moodle: <br>
+		                                    				<span><a target="_blank" href="http://ead.ienh.com.br/course/view.php?id=390">http://ead.ienh.com.br/course/view.php?id=390</a></span>
+	                                    				</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="divider layout-row">
+                                            <div class="timeline-item">
+                                                <div class="timeline-item__col timeline-item__col--info">
+                                                    <div class="timeline-item__place">Colégio Luterano Concórdia</div>
+                                                    <!-- <div class="timeline-item__location">Santa Monica, USA</div> -->
+                                                    <img src="uploads/resume/logo-concordia.jpg" alt="">
+                                                </div>
+                                                <div class="timeline-item__col timeline-item__col--description">
+                                                    <div class="timeline-item__period curso_turmas">Curso Técnico em Informática</div>
+                                                    <div class="timeline-item__title">Web 3</div>
+                                                    <div class="timeline-item__description">
+	                                                    <p>
+		                                    				Acesso ao conteúdo no Sistema Moodle: <br>
+		                                    				<span><a target="_blank" href="http://www.concordiasl.com.br/moodle/course/view.php?id=20">http://www.concordiasl.com.br/moodle/course/view.php?id=20</a></span>
+	                                    				</p>
+                                                    </div>
+												</div>
+											</div>
+											<div class="timeline-item">
+                                                <div class="timeline-item__col timeline-item__col--info">
+                                                    <div class="timeline-item__place">Colégio Luterano Concórdia</div>
+                                                    <!-- <div class="timeline-item__location">Santa Monica, USA</div> -->
+                                                    <img src="uploads/resume/logo-concordia.jpg" alt="">
+                                                </div>
+                                                <div class="timeline-item__col timeline-item__col--description">
+                                                    <div class="timeline-item__title">Banco de Dados</div>
+                                                    <div class="timeline-item__description">
+	                                                    <p>
+		                                    				Acesso ao conteúdo no Sistema Moodle: <br>
+		                                    				<span><a target="_blank" href="http://www.concordiasl.com.br/moodle/course/view.php?id=19">http://www.concordiasl.com.br/moodle/course/view.php?id=19</a></span>
+	                                    				</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end .timeline -->
+                                    </div>
                                 </div>
+                                
                             </div>
-                            <div class="col-md-6 page-home__thumbnail-wrap">
-                                <img class="page-home__thumbnail" src="uploads/home/home-image.jpg" alt="Tiago Kautzmann">
-                            </div>
+                            <!-- end .accordion-group -->
                         </div>
-						<!--
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img class="page-home__sign" src="uploads/home/sign.png" alt="">
-                            </div>
-                        </div>
-						-->
                     </section>
                 </div>
                 <!-- end .layout-content -->
                 <!-- 
                 <div class="footer--bottom layout-row">
-                    <p class="footer__copyright">&copy; Tiago Kautzmann, 2016.</p>
+                    <p class="footer__copyright">&copy; Rossi, 2015. All rights reserved.</p>
                 </div>
-                 -->
+                -->
             </div>
         </div>
         <!-- end .layout -->
@@ -212,29 +300,8 @@
          -->
         <!-- end .style-panel -->
         <!-- style panel assets -->
-        
-		<!--
-        <div class="chattiago">
-        	<div class="titulo">
-        		<p>Converse com meu chatbot!</p>
-        		<p class="minimizar">ABRIR CHATBOT</p>
-        	</div>
-			<div id="watson" class="watson">
-				<div class="mensagens">
-					<div class="area" id="chat1"></div>
-				</div>
-				<form id="mensagem" class="mensagem">
-					<input type="text" id="texto" name="texto" placeholder="Digite sua mensagem"/>
-					<button type="submit">Enviar</button>
-				</form>
-			</div>
-        
-        </div>
-        -->
-		
         <script type="text/javascript" src="assets/jslib/jquery.cookie.js"></script>
         <script type="text/javascript" src="assets/js/StylePanel.js"></script>
-        <!--<script type="text/javascript" src="assets/js/chatbot.js"></script> -->
         <!-- end style panel assets -->
     </body>
 </html>
