@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="CSS/estiloCapital.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<title>Calculadora de Capital de Giro</title>
+</head>
+<body>
+
+	<!-- Barra de Navegação -->
+	<div class="navegacao">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+				aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+				<img class="logo" src="img/logo_projeto.png" alt="">
+				<a class="navbar-brand" href="home.html">DinDinTeens</a>
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="sobre.html">Sobre <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="glossario.html">Glossário <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="investimentos.html">Investimentos <span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="capitalDeGiro.html">Capital de Giro <span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="fluxoDeCaixa.html">Fluxo de Caixa <span
+								class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Buscar no site..."
+						aria-label="Buscar" style="background-color:white;">
+					<button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"
+						style="border-radius: 20px; background-color: lightgreen;">Pesquisar</button>
+				</form>
+			</div>
+		</nav>
+	</div>
+
+	<!--Calculadora de Capital de Giro-->
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Calcule o seu capital de giro</h1>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<form action="/calcular" method="post">
+					<div class="form-group">
+						<label for="periodo">Período</label>
+						<select class="form-control" id="periodo" name="periodo">
+							<script src="js/periodo-em-branco.js"></script>
+							<option value="Mensal">Mensal</option>
+							<option value="Trimestral">Trimestral</option>
+							<option value="Semestral">Semestral</option>
+							<option value="Anual">Anual</option>
+						</select>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<button type="button" class="btn btn-primary" data-toggle="modal"
+								data-target="#modal-gasto">Adicionar Gasto</button>
+						</div>
+					</div>
+					<div class="modal fade" id="modal-gasto" tabindex="-1" aria-labelledby="modal-gasto-label"
+						aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="modal-gasto-label">Adicionar Gasto</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<div class="form-group">
+										<label for="valor">Valor</label>
+										<input type="number" class="form-control valor" id="valor" name="valor"
+											placeholder="R$ 0,00">
+									</div>
+								</div>
+								<div class="modal-body">
+									<div class="form-group">
+										<div class="form-group">
+											<label for="tipo">Tipo de Gasto</label>
+											<select class="form-control" id="tipo" name="tipo">
+												<script src="js/tipo-em-branco.js"></script>
+												<option value="Conta de Luz">Conta de Luz</option>
+												<option value="Conta de Água">Conta de Água</option>
+												<option value="Conta de Internet">Conta de Internet</option>
+												<option value="Conta de Telefone">Conta de Telefone</option>
+												<option value="Aluguel">Aluguel</option>
+												<option value="Comida">Comida</option>
+												<option value="Transporte">Transporte</option>
+												<option value="Lazer">Lazer</option>
+												<option value="Outro">Outro</option>
+											</select>
+										</div>
+									</div>
+
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary"
+										data-dismiss="modal">Cancelar</button>
+									<button type="button" class="btn btn-primary">Salvar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<button type="submit" class="btn btn-primary">Calcular</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-6">
+				<div class="resultado">
+					<h2>Resultado</h2>
+					<div class="card">
+						<div class="card-header">
+							Seu capital de giro é:
+						</div>
+						<div class="card-body">
+							<h1 class="text-center">R$ <span id="capital-de-giro"></span></h1>
+							<script src="js/calcular-capital-de-giro.js"></script>
+						</div>
+					</div>
+					<div class="btn-limpar">
+						<button type="button" class="btn btn-primary" onclick="limparResultado()">Limpar
+							Resultado</button>
+						<script src="js/limpar-resultado.js"></script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Rodapé-->
+	<div class="rodape">
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<p class="mb-0">
+							Finanças para Jovens é um site gratuito que oferece informações e recursos para ajudar
+							os
+							jovens
+							a melhorar suas finanças.
+						</p>
+					</div>
+					<div class="col-md-6">
+						<p class="mb-0 text-right">
+							© 2023 Finanças para Jovens
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

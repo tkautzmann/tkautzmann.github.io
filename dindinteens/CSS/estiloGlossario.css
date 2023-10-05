@@ -1,0 +1,109 @@
+.navbar {
+  border-radius: 0;
+  background-color: #681182;
+}
+
+.logo{
+  width: 80px;
+  padding-right: 10px;
+}
+
+.navbar-brand {
+  font-size: 0px;
+  font-weight: bold;
+}
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+    
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+    
+  .text-center {
+    text-align: center;
+  }
+    
+  .form-control {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+  }
+    
+  .list-group {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .list-group-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .list-group-item a {
+    font-weight: bold;
+  }
+  
+  .list-group-item p {
+    margin-top: 5px;
+  }
+    
+  .list-group-item i {
+    float: left;
+    margin-right: 10px;
+  }
+    
+  .list-group-item:hover {
+    background-color: #f5f5f5;
+  }
+    
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+  
+    .list-group {
+      margin-top: 0;
+    }
+  
+    .list-group-item {
+      border-top: 0;
+    }
+  
+    .list-group-item:hover {
+      background-color: transparent;
+    }
+  }
+  
+  .rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
