@@ -10,24 +10,24 @@ function calcularCapitalDeGiro() {
   }
 
   // Calcular o capital de giro
-  let capitalDeGiro = 0;
-  switch (periodo) {
-    case "Mensal":
-      capitalDeGiro = totalGastos * 3;
-      break;
-    case "Trimestral":
-      capitalDeGiro = totalGastos * 9;
-      break;
-    case "Semestral":
-      capitalDeGiro = totalGastos * 18;
-      break;
-    case "Anual":
-      capitalDeGiro = totalGastos * 36;
-      break;
-  }
+  // let capitalDeGiro = 0;
+  // switch (periodo) {
+  //   case "Mensal":
+  //     capitalDeGiro = totalGastos * 3;
+  //     break;
+  //   case "Trimestral":
+  //     capitalDeGiro = totalGastos * 9;
+  //     break;
+  //   case "Semestral":
+  //     capitalDeGiro = totalGastos * 18;
+  //     break;
+  //   case "Anual":
+  //     capitalDeGiro = totalGastos * 36;
+  //     break;
+  // }
 
   // Exibir o resultado
-  document.getElementById("capital-de-giro").textContent = capitalDeGiro.toFixed(2);
+  document.getElementById("capital-de-giro").textContent = totalGastos.toFixed(2);
 }
 
 // Adicionar um evento de submit ao formulário
