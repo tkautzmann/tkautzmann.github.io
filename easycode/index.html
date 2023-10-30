@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyCode</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Place the first <script> tag in your HTML's <head> -->
+    <script src="https://cdn.tiny.cloud/1/hf6a2n50w5li2zk03dwtj3puw2ta9g9rik40nqqxqcdm0g75/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <textarea id="codeEditor"></textarea>
+        <button id="btnExecutar">Clique aqui para executar o programa</button>
+    </div>
+
+    <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
+    <script>
+
+        function isNumeric(str) {
+            if (typeof str != "string") return false 
+            return !isNaN(str) && !isNaN(parseFloat(str))
+        }
+
+        const inicio = () => {
+            alert("Iniciou o programa")
+        }
+
+        const fim = () => {
+            alert("Terminou o programa")
+        }
+
+        const ler = () => {
+            valor = prompt("Digite um valor")
+            if (isNumeric(valor)) return parseFloat(valor)
+            else return valor
+        }
+
+        const tela = (msg) => {
+            alert(msg)
+        }
+
+        tinymce.init({
+            selector: '#codeEditor',
+            toolbar: 'undo redo',
+            menubar: '',
+            min_height: 300,
+            spellchecker_active: false,
+            statusbar: false,
+            plugins: 'autoresize nonbreaking',
+            nonbreaking_force_tab: true,
+            indentation : '20pt',
+            autoresize_bottom_margin: 15,
+            content_style: `body {
+              background: #fff;
+              font-size: 24pt;
+              line-height: 0.5;
+              font-family: 'Courier New', Courier, monospace;
+            }`
+        });
+
+        btnExecutar = document.getElementById("btnExecutar");
+        btnExecutar.addEventListener("click", () => {
+            var myContent = tinymce.activeEditor.getContent()
+            //remove html tags
+            cleanContent = myContent.replace(/<\/?[^>]+(>|$)/g, "");
+            //add parenthesis to commands inicio and fim
+            var modifiedContent = cleanContent.replace(/(inicio)/g, "$1()")
+                .replace(/(fim)/g, "$1()")
+                .replace(/(ler)/g, "$1()")
+                .replace(/(se)/g, "if")
+                .replace(/(&nbsp;)/g, "")
+            // rum code
+            eval(modifiedContent)
+        })
+
+    </script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
