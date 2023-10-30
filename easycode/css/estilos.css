@@ -28,3 +28,45 @@ body{
     background-color: rgb(4, 107, 4);
     color: #fff;
 }
+
+#mensagem{
+    width: 300px;
+    background-color: #ccc;
+    box-shadow: 0 0 10px #000;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid rgb(173, 33, 33);
+    z-index: 10000;
+    border-radius: 10px;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    display: none
+}
+
+#leitura{
+    width: 300px;
+    background-color: #ccc;
+    box-shadow: 0 0 10px #000;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid rgb(4, 107, 4);
+    z-index: 10000;
+    border-radius: 10px;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    display: none
+}
+
+#leitura input[type=text]{
+    font-size: 20px;
+}
