@@ -75,15 +75,22 @@
             //remove html tags
             cleanContent = myContent.replace(/<\/?[^>]+(>|$)/g, "");
             //add parenthesis to commands inicio and fim
-            var modifiedContent = cleanContent.replace(/(inicio)/g, "$1()")
+            var modifiedContent = cleanContent
+                .replace(/(entao)/g, "{")
+                .replace(/(fim{)/g, "}")
+                .replace(/(inicio)/g, "$1()")
                 .replace(/(fim)/g, "$1()")
                 .replace(/(valordoteclado)/g, "$1()")
                 .replace(/(se)/g, "if")
+                .replace(/(if\s)/g, "$1(")
+                .replace(/(if\s+\(.+)/g, "$1)")
                 .replace(/(joganatela\s)/g, "$1(")
-                .replace(/(joganatela\s+\([a-z0-9]+)/g, "$1)")
+                .replace(/(joganatela\s+\(.+)/g, "$1)")
+                .replace(/(&lt;)/g, "<")
+                .replace(/(&gt;)/g, ">")
                 .replace(/(&nbsp;)/g, "")
-            // rum code
-            //alert(modifiedContent)
+            // run code
+            alert(modifiedContent)
             eval(modifiedContent)
         })
 
