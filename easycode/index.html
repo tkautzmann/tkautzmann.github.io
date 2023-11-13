@@ -15,6 +15,7 @@
 
     <div class="container">
         <textarea id="codeEditor"></textarea>
+        <button id="btnLimpar">Limpar editor</button>
         <button id="btnExecutar">Clique aqui para executar o programa</button>
     </div>
 
@@ -94,6 +95,13 @@
             // run code
             //alert(modifiedContent)
             eval(modifiedContent)
+        })
+
+        btnLimpar = document.getElementById("btnLimpar");
+        btnLimpar.addEventListener("click", () => {
+            if(confirm("Tem certeza que deseja limpar o editor?")){
+                tinymce.activeEditor.setContent("")
+            }
         })
 
     </script>
