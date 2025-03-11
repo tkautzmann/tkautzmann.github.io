@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <title>Tiago Kautzmann</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
         <!-- Savvy version 1.0.4 date: 2015-06-13 08:59:50 -->
         <!-- stylesheets -->
 		<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
@@ -11,7 +14,7 @@
         <link rel="stylesheet" type="text/css" href="assets/csslib/icomoon.css">
         <link rel="stylesheet" type="text/css" href="assets/csslib/jquery.mCustomScrollbar.css">
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-custom.css">
-        <link rel="stylesheet" type="text/css" id="savvyStyle" href="assets/css/main-skin-style5.css">
+        <link rel="stylesheet" type="text/css" id="savvyStyle" href="assets/css/main-skin-style6.css">
         <!-- end stylesheets -->
     </head>
     <body class="layout-body layout-body--home">
@@ -23,7 +26,7 @@
                 <header>
                     <div id="headerMenuSlidingElement" class="main-nav__sliding-element"></div>
                     <ul class="main-nav">
-                        <li class="main-nav__item main-nav__item--active">
+                        <li class="main-nav__item">
                             <a class="main-nav__item-link" href="index.html">
                                 <span class="main-nav__item-icon-wrapper">
                                     <i class="main-nav__item-icon icon-home"></i>
@@ -48,7 +51,7 @@
                                 <span class="main-nav__item-content">Services</span>
                             </a>
                         </li>
-                         -->
+                         
                         <li class="main-nav__item">
                             <a class="main-nav__item-link" href="publicacoes.html">
                                 <span class="main-nav__item-icon-wrapper">
@@ -57,13 +60,13 @@
                                 <span class="main-nav__item-content">Publicações</span>
                             </a>
                         </li>
-                         
-                        <li class="main-nav__item">
-                            <a class="main-nav__item-link" href="turmas.html">
+                        --> 
+                        <li class="main-nav__item main-nav__item--active">
+                            <a class="main-nav__item-link" href="livros.html">
                                 <span class="main-nav__item-icon-wrapper">
-                                    <i class="main-nav__item-icon icon-users"></i>
+                                    <i class="main-nav__item-icon icon-books"></i>
                                 </span>
-                                <span class="main-nav__item-content">Turmas</span>
+                                <span class="main-nav__item-content">Livros</span>
                             </a>
                         </li>
                         <li class="main-nav__item">
@@ -96,7 +99,6 @@
                             <li>professor</li>
                             <li>pesquisador</li>
                             <li>desenvolvedor de software</li>
-                            <li>colorado</li>
                         </ul>
                     </div>
                     <!-- .social-icons -->
@@ -131,9 +133,9 @@
                          -->
                     </ul>
                     <!-- end .social-icons -->
-                    <footer class="footer">
-                        <p class="footer__copyright">&copy; Tiago Kautzmann, 2016.</p>
-                    </footer>
+                    <!-- <footer class="footer">
+                        <p class="footer__copyright">Tiago Kautzmann, 2017</p>
+                    </footer> -->
                 </div>
                 <!-- end .sidebar -->
             </div>
@@ -143,31 +145,47 @@
                 <div class="layout-content">
                     <section class="page-resume">
                         <div class="layout-title-wrapper layout-row">
-                            <h1 class="layout-title layout-container-width layout-container">Livros publicados</h1>
+                            <h1 class="layout-title layout-container-width layout-container">Livros publicados
+                               <!--  <span class="layout-title__subtitle">Up-to-date</span> -->
+                            </h1>
                         </div>
                         <div class="layout-row">
-                            <div id="collapse0" class="accordion-item__panel collapse in">
-                                <div class="timeline timeline--layout layout-container">
-                                    <div class="timeline-item">
-                                        <div class="timeline-item__col timeline-item__col--info">   
-                                            <img src="uploads/resume/logo-unisinos.jpg" alt="">
-                                        </div>
-                                        <div class="timeline-item__col timeline-item__col--description">
-                                            <div class="timeline-item__title">Mestrado em Computação Aplicada</div>
-                                            <div class="timeline-item__description">Mestrado em Computação Aplicada envolvendo pesquisa em Inteligência Artificial aplicada à Educação. O trabalho de dissertação de Mestrado propôs, implementou e avaliou um modelo de treinamento da habilidade metacognitiva de monitoramento do conhecimento em Sistemas Tutores Inteligentes.</div>
+                            <div class="timeline timeline--layout layout-container">
+                                <div class="timeline-item">
+                                    <div class="timeline-item__col timeline-item__col--info">
+                                        <img src="livros/capa-ia-programacao.jpeg" style="width: 100%"alt="">
+                                    </div>
+                                    <div class="timeline-item__col timeline-item__col--description">
+                                        <div class="timeline-item__period curso_turmas">Aprendendo a Programar com a Ajuda de IAs: Estratégias para Turbinar Seus Estudos</div>
+                                        <div class="timeline-item__description">
+                                            <p>
+                                                <span>
+                                                    <a target="_blank" href="https://www.amazon.com.br/Aprendendo-Programar-com-Ajuda-IAs-ebook/dp/B0DZQG1CYC">Clique aqui para acesso o livro via Amazon.</a>
+                                                </span>
+                                            </p>
                                         </div>
                                     </div>
-                                    <hr class="divider layout-row">
-                                    
                                 </div>
-                                <!-- end .timeline -->
-                            </div>
+                                <hr class="divider layout-row">
+                                <div class="timeline-item">
+                                    <div class="timeline-item__col timeline-item__col--info">
+                                        <img src="livros/capa-bugs-emocoes.jpeg" style="width: 100%"alt="">
+                                    </div>
+                                    <div class="timeline-item__col timeline-item__col--description">
+                                        <div class="timeline-item__period curso_turmas">Entre Bugs e Emoções: Como a Confusão pode Beneficiar a Aprendizagem de Programação</div>
+                                        <div class="timeline-item__description">
+                                            <p>
+                                                <span>
+                                                    <a target="_blank" href="https://www.amazon.com.br/Entre-Bugs-Emo%C3%A7%C3%B5es-Aprendizagem-Programa%C3%A7%C3%A3o-ebook/dp/B0DZTZSZBV">Clique aqui para acesso o livro via Amazon.</a>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                            </div> 
                         </div>
                     </section>
-                </div>
-                <!-- end .layout-content -->
-                <div class="footer--bottom layout-row">
-                    <p class="footer__copyright">&copy; Rossi, 2015. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -186,24 +204,26 @@
         <script type="text/javascript" src="assets/js/Template.js"></script>
         <!-- end javascripts -->
         <!-- .style-panel -->
+        <!-- 
         <div class="style-panel" style="display:none">
             <div class="style-panel__button">
                 <i class="fa fa-paint-brush"></i>
             </div>
-            <div class="style-panel__title">Choose a color:</div>
+            <div class="style-panel__title">Escolha uma cor:</div>
             <div class="style-panel__colors">
-                <a data-value="style1" href="resume.html#" class="style-panel__color style-panel__color--style1"></a>
-                <a data-value="style2" href="resume.html#" class="style-panel__color style-panel__color--style2"></a>
-                <a data-value="style3" href="resume.html#" class="style-panel__color style-panel__color--style3"></a>
-                <a data-value="style4" href="resume.html#" class="style-panel__color style-panel__color--style4"></a>
-                <a data-value="style5" href="resume.html#" class="style-panel__color style-panel__color--style5"></a>
-                <a data-value="style6" href="resume.html#" class="style-panel__color style-panel__color--style6"></a>
+                <a data-value="style1" href="index.html#" class="style-panel__color style-panel__color--style1"></a>
+                <a data-value="style2" href="index.html#" class="style-panel__color style-panel__color--style2"></a>
+                <a data-value="style3" href="index.html#" class="style-panel__color style-panel__color--style3"></a>
+                <a data-value="style4" href="index.html#" class="style-panel__color style-panel__color--style4"></a>
+                <a data-value="style5" href="index.html#" class="style-panel__color style-panel__color--style5"></a>
+                <a data-value="style6" href="index.html#" class="style-panel__color style-panel__color--style6"></a>
             </div>
             <div class="style-panel__info">and many more...</div>
             <div class="style-panel__reset">
-                <button class="btn-reset btn btn-xs btn--style1">reset</button>
+                <button class="btn-reset btn btn-xs btn--style1">Voltar padrão</button>
             </div>
         </div>
+         -->
         <!-- end .style-panel -->
         <!-- style panel assets -->
         <script type="text/javascript" src="assets/jslib/jquery.cookie.js"></script>
