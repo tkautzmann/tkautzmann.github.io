@@ -1,0 +1,152 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS GERAIS */
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+body{
+    font-family: "Segoe UI", Roboto, "Helvetica Neue";
+    background-color: #fff;
+   
+}
+
+/* ESTILOS DA PÁGINA DOSCURSOS SUPERIORES E ESPECIALIZAÇÃO */
+
+.container-layout{
+    display: grid;
+    grid-template-columns: 12fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    gap: 10px;
+    min-height: 100vh;
+}
+
+.header{
+    grid-area: header;
+    padding: 20px;
+    text-align: center;
+}
+
+.main{
+    grid-area: main;
+    padding: 20px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #bbb;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+.container-infos{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.container-infos div{
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    width: 600px;
+    text-align: center;
+    color: #000;
+}
+
+.container-infos div h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container-datas{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 60px;
+    color: #fff;
+}
+
+.container-datas div{
+    background-color: #ed7410;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    width: 200px;
+    text-align: center;
+}
+
+.container-datas div h1{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.container-ofertas{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.container-links{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;;
+}
+
+.container-links div{
+    background-color: #ccc;
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-links a{
+    font-size: 2rem;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.endereco{
+    width: 400px;
+    font-size: 1.2rem;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.container-footer img{
+    width: 200px;
+}
+
+.instagram{
+    width: 50px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.instagram img{
+    width: 100%;
+}
+
+.instagram img:hover{
+    transform: scale(1.1);
+}
