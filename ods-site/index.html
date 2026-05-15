@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ODS em Ação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <h1>ODS em Ação</h1>
+
+    <nav class="menu">
+      <a href="#">Início</a>
+      <a href="#">Objetivos</a>
+      <a href="#">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-texto">
+        <h2>Objetivos de Desenvolvimento Sustentável</h2>
+        <p>
+          Os ODS da ONU são 17 objetivos globais criados para promover um futuro
+          mais justo, sustentável e inclusivo.
+        </p>
+      </div>
+
+      <img 
+        src="https://images.unsplash.com/photo-1497436072909-60f360e1d4b1"
+        alt="Imagem representando sustentabilidade"
+        class="hero-imagem"
+      >
+    </section>
+
+    <section class="ods">
+      <h2>Alguns Objetivos</h2>
+
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c" alt="Educação">
+          <h3>ODS 4</h3>
+          <p>Educação de qualidade para todos.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="Natureza">
+          <h3>ODS 13</h3>
+          <p>Ação contra a mudança global do clima.</p>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952" alt="Pessoas trabalhando juntas">
+          <h3>ODS 17</h3>
+          <p>Parcerias para alcançar os objetivos.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Atividade prática de HTML, CSS, Flexbox e responsividade.</p>
+  </footer>
+
+  <script>
+    /* Bloqueia clique direito */
+    document.addEventListener("contextmenu", function(event) {
+        event.preventDefault();
+    });
+
+    /* Bloqueia algumas teclas */
+    document.addEventListener("keydown", function(event) {
+
+        /* Bloqueia F12 */
+        if (event.key === "F12") {
+        event.preventDefault();
+        }
+
+        /* Bloqueia Ctrl+U (ver código-fonte) */
+        if (event.ctrlKey && event.key.toLowerCase() === "u") {
+        event.preventDefault();
+        }
+
+        /* Bloqueia Ctrl+C */
+        if (event.ctrlKey && event.key.toLowerCase() === "c") {
+        event.preventDefault();
+        }
+
+        /* Bloqueia Ctrl+Shift+I (DevTools) */
+        if (
+        event.ctrlKey &&
+        event.shiftKey &&
+        event.key.toLowerCase() === "i"
+        ) {
+        event.preventDefault();
+        }
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.cabecalho {
+  background-color: #00689d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  background-color: white;
+}
+
+.hero-imagem {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ods {
+  padding: 20px;
+}
+
+.ods h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  color: #00689d;
+}
+
+.rodape {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* 
+   Media query aplicada para telas com largura mínima de 600px.
+   Normalmente utilizada para tablets pequenos e telas maiores.
+*/
+@media (min-width: 600px) {
+
+  /* 
+     Altera o menu de coluna para linha horizontal.
+     Os itens do menu passam a ficar lado a lado.
+  */
+  .menu {
+    flex-direction: row;
+
+    /* Centraliza os itens horizontalmente */
+    justify-content: center;
+  }
+
+  /* 
+     Os cards deixam de ficar em coluna
+     e passam a se organizar horizontalmente.
+  */
+  .cards {
+    flex-direction: row;
+
+    /* 
+       Permite que os cards quebrem para a próxima linha
+       caso não exista espaço suficiente.
+    */
+    flex-wrap: wrap;
+  }
+
+  /* 
+     Define o comportamento flexível dos cards.
+     
+     1  -> o card pode crescer;
+     1  -> o card pode diminuir;
+     45% -> largura base aproximada do card.
+     
+     Isso faz com que normalmente dois cards caibam por linha.
+  */
+  .card {
+    flex: 1 1 45%;
+  }
+}
+
+/* 
+   Media query aplicada para telas com largura mínima de 900px.
+   Geralmente utilizada para notebooks, desktops pequenos
+   e tablets em modo paisagem.
+*/
+@media (min-width: 900px) {
+
+  /* 
+     A seção principal (.hero) deixa de ficar em coluna
+     e passa a organizar seus elementos lado a lado.
+  */
+  .hero {
+    flex-direction: row;
+
+    /* 
+       Alinha verticalmente os elementos ao centro.
+       Isso melhora o alinhamento entre texto e imagem.
+    */
+    align-items: center;
+  }
+
+  /* 
+     Faz a área de texto ocupar espaço flexível disponível.
+  */
+  .hero-texto {
+    flex: 1;
+  }
+
+  /* 
+     Faz a imagem também ocupar espaço flexível.
+  */
+  .hero-imagem {
+    flex: 1;
+
+    /* 
+       Limita a largura máxima da imagem em 50%,
+       evitando que ela fique exageradamente grande.
+    */
+    max-width: 50%;
+  }
+
+  /* 
+     Ajusta os cards para ocuparem aproximadamente
+     30% da largura disponível.
+     
+     Isso normalmente permite três cards por linha.
+  */
+  .card {
+    flex: 1 1 30%;
+  }
+}
+
+/* 
+   Media query aplicada para telas com largura mínima de 1200px.
+   Normalmente utilizada para monitores maiores e desktops widescreen.
+*/
+@media (min-width: 1200px) {
+
+  /* 
+     Define uma largura máxima para o conteúdo principal.
+     Isso evita que o conteúdo fique muito espalhado
+     em telas muito grandes.
+  */
+  main {
+    max-width: 1200px;
+
+    /* 
+       Centraliza horizontalmente o conteúdo.
+       O valor "auto" distribui automaticamente
+       as margens laterais.
+    */
+    margin: 0 auto;
+  }
+
+  /* 
+     O cabeçalho passa a utilizar Flexbox.
+     Os elementos internos ficam organizados horizontalmente.
+  */
+  .cabecalho {
+    display: flex;
+
+    /* 
+       Coloca os elementos nas extremidades:
+       título de um lado e menu do outro.
+    */
+    justify-content: space-between;
+
+    /* 
+       Centraliza verticalmente os elementos do cabeçalho.
+    */
+    align-items: center;
+
+    /* 
+       Alinha o texto à esquerda.
+    */
+    text-align: left;
+  }
+
+  /* 
+     Remove o espaçamento superior do menu,
+     pois agora ele está alinhado horizontalmente
+     ao lado do título.
+  */
+  .menu {
+    margin-top: 0;
+  }
+}
+
+body {
+  user-select: none;
+}
